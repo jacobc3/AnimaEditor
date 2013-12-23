@@ -205,30 +205,25 @@
         <DimensionLayout dim="0">
           <Group type="103" groupAlignment="0" attributes="0">
               <Group type="102" attributes="0">
-                  <Component id="frameListLabel" min="-2" max="-2" attributes="0"/>
-                  <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                  <Component id="frameListScrollPane" max="32767" attributes="0"/>
+                  <EmptySpace max="-2" attributes="0"/>
               </Group>
               <Group type="102" attributes="0">
                   <Group type="103" groupAlignment="0" attributes="0">
-                      <Component id="frameListScrollPane" pref="200" max="32767" attributes="0"/>
                       <Group type="102" attributes="0">
-                          <Group type="103" groupAlignment="0" attributes="0">
-                              <Group type="102" alignment="0" attributes="0">
-                                  <Component id="frameNewButton" min="-2" max="-2" attributes="0"/>
-                                  <EmptySpace max="-2" attributes="0"/>
-                                  <Component id="frameDuplicateButton" min="-2" max="-2" attributes="0"/>
-                              </Group>
-                              <Component id="frameDeleteButton" alignment="0" min="-2" max="-2" attributes="0"/>
-                              <Group type="102" alignment="0" attributes="0">
-                                  <Component id="frameUpButton" min="-2" max="-2" attributes="0"/>
-                                  <EmptySpace max="-2" attributes="0"/>
-                                  <Component id="frameDownButton" min="-2" max="-2" attributes="0"/>
-                              </Group>
-                          </Group>
-                          <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                          <Component id="frameNewButton" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="frameUpButton" min="-2" max="-2" attributes="0"/>
                       </Group>
+                      <Component id="frameListLabel" min="-2" max="-2" attributes="0"/>
+                      <Group type="102" attributes="0">
+                          <Component id="frameDeleteButton" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="frameDownButton" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <Component id="frameDuplicateButton" alignment="0" min="-2" max="-2" attributes="0"/>
                   </Group>
-                  <EmptySpace max="-2" attributes="0"/>
+                  <EmptySpace min="0" pref="72" max="32767" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>
@@ -237,19 +232,19 @@
               <Group type="102" alignment="0" attributes="0">
                   <Component id="frameListLabel" min="-2" max="-2" attributes="0"/>
                   <EmptySpace max="-2" attributes="0"/>
-                  <Component id="frameListScrollPane" max="32767" attributes="0"/>
+                  <Component id="frameListScrollPane" pref="359" max="32767" attributes="0"/>
                   <EmptySpace max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="3" attributes="0">
                       <Component id="frameNewButton" linkSize="1" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="frameDuplicateButton" linkSize="1" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="frameUpButton" linkSize="1" alignment="3" min="-2" max="-2" attributes="0"/>
                   </Group>
-                  <EmptySpace max="-2" attributes="0"/>
-                  <Component id="frameDeleteButton" linkSize="1" min="-2" max="-2" attributes="0"/>
                   <EmptySpace max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="3" attributes="0">
-                      <Component id="frameUpButton" linkSize="1" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="frameDeleteButton" linkSize="1" alignment="3" min="-2" max="-2" attributes="0"/>
                       <Component id="frameDownButton" linkSize="1" alignment="3" min="-2" max="-2" attributes="0"/>
                   </Group>
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Component id="frameDuplicateButton" linkSize="1" min="-2" max="-2" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>
@@ -271,7 +266,7 @@
               <Properties>
                 <Property name="model" type="javax.swing.ListModel" editor="org.netbeans.modules.form.editors2.ListModelEditor">
                   <StringArray count="5">
-                    <StringItem index="0" value="Item 1"/>
+                    <StringItem index="0" value="Fram 1"/>
                     <StringItem index="1" value="Item 2"/>
                     <StringItem index="2" value="Item 3"/>
                     <StringItem index="3" value="Item 4"/>
@@ -336,20 +331,24 @@
                       <Component id="actionScrollPane" max="32767" attributes="0"/>
                       <Group type="102" attributes="0">
                           <Group type="103" groupAlignment="0" attributes="0">
-                              <Component id="actionNewButton" min="-2" max="-2" attributes="0"/>
-                              <Group type="102" alignment="0" attributes="0">
-                                  <Group type="103" groupAlignment="1" attributes="0">
-                                      <Component id="actionUpButton" min="-2" max="-2" attributes="0"/>
-                                      <Component id="actionRenameButton" min="-2" max="-2" attributes="0"/>
-                                  </Group>
-                                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                                  <Group type="103" groupAlignment="0" attributes="0">
-                                      <Component id="actionDuplicateButton" min="-2" max="-2" attributes="0"/>
-                                      <Component id="actionDownButton" min="-2" max="-2" attributes="0"/>
-                                  </Group>
+                              <Component id="actionRenameButton" linkSize="4" alignment="0" min="-2" max="-2" attributes="0"/>
+                              <Component id="actionNewButton" linkSize="4" alignment="0" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Group type="102" attributes="0">
+                                  <Component id="actionUpButton" linkSize="4" min="-2" max="-2" attributes="0"/>
+                                  <EmptySpace min="24" pref="52" max="32767" attributes="0"/>
+                              </Group>
+                              <Group type="102" attributes="0">
+                                  <Component id="actionDownButton" linkSize="4" min="-2" max="-2" attributes="0"/>
+                                  <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
                               </Group>
                           </Group>
-                          <EmptySpace min="0" pref="32" max="32767" attributes="0"/>
+                      </Group>
+                      <Group type="102" alignment="0" attributes="0">
+                          <Component id="actionDuplicateButton" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
                       </Group>
                   </Group>
                   <EmptySpace max="-2" attributes="0"/>
@@ -363,17 +362,17 @@
                   <EmptySpace max="-2" attributes="0"/>
                   <Component id="actionScrollPane" pref="359" max="32767" attributes="0"/>
                   <EmptySpace max="-2" attributes="0"/>
-                  <Component id="actionNewButton" linkSize="2" min="-2" max="-2" attributes="0"/>
-                  <EmptySpace max="-2" attributes="0"/>
-                  <Group type="103" groupAlignment="3" attributes="0">
-                      <Component id="actionDuplicateButton" linkSize="2" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="actionRenameButton" linkSize="2" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Component id="actionUpButton" linkSize="2" min="-2" max="-2" attributes="0"/>
+                      <Component id="actionNewButton" linkSize="2" alignment="1" min="-2" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace max="-2" attributes="0"/>
-                  <Group type="103" groupAlignment="3" attributes="0">
-                      <Component id="actionUpButton" linkSize="2" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="actionDownButton" linkSize="2" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Component id="actionDownButton" linkSize="2" min="-2" max="-2" attributes="0"/>
+                      <Component id="actionRenameButton" linkSize="2" alignment="0" min="-2" max="-2" attributes="0"/>
                   </Group>
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Component id="actionDuplicateButton" linkSize="2" min="-2" max="-2" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>
@@ -466,7 +465,7 @@
                           <Component id="moduleMoveButton" min="-2" max="-2" attributes="0"/>
                       </Group>
                   </Group>
-                  <EmptySpace pref="12" max="32767" attributes="0"/>
+                  <EmptySpace max="32767" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>

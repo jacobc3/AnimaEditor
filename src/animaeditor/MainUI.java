@@ -90,7 +90,7 @@ public class MainUI extends javax.swing.JFrame {
         frameListLabel.setText("帧列表");
 
         frameList.setModel(new javax.swing.AbstractListModel() {
-            String[] strings = { "Item 1", "Item 2", "Item 3", "Item 4", "Item 5" };
+            String[] strings = { "Fram 1", "Item 2", "Item 3", "Item 4", "Item 5" };
             public int getSize() { return strings.length; }
             public Object getElementAt(int i) { return strings[i]; }
         });
@@ -116,41 +116,38 @@ public class MainUI extends javax.swing.JFrame {
         framePanelLayout.setHorizontalGroup(
             framePanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(framePanelLayout.createSequentialGroup()
-                .addComponent(frameListLabel)
-                .addGap(0, 0, Short.MAX_VALUE))
+                .addComponent(frameListScrollPane)
+                .addContainerGap())
             .addGroup(framePanelLayout.createSequentialGroup()
                 .addGroup(framePanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(frameListScrollPane, javax.swing.GroupLayout.DEFAULT_SIZE, 200, Short.MAX_VALUE)
                     .addGroup(framePanelLayout.createSequentialGroup()
-                        .addGroup(framePanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(framePanelLayout.createSequentialGroup()
-                                .addComponent(frameNewButton)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(frameDuplicateButton))
-                            .addComponent(frameDeleteButton)
-                            .addGroup(framePanelLayout.createSequentialGroup()
-                                .addComponent(frameUpButton)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(frameDownButton)))
-                        .addGap(0, 0, Short.MAX_VALUE)))
-                .addContainerGap())
+                        .addComponent(frameNewButton)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(frameUpButton))
+                    .addComponent(frameListLabel)
+                    .addGroup(framePanelLayout.createSequentialGroup()
+                        .addComponent(frameDeleteButton)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(frameDownButton))
+                    .addComponent(frameDuplicateButton))
+                .addGap(0, 72, Short.MAX_VALUE))
         );
         framePanelLayout.setVerticalGroup(
             framePanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(framePanelLayout.createSequentialGroup()
                 .addComponent(frameListLabel)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(frameListScrollPane)
+                .addComponent(frameListScrollPane, javax.swing.GroupLayout.DEFAULT_SIZE, 359, Short.MAX_VALUE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(framePanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(frameNewButton)
-                    .addComponent(frameDuplicateButton))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(frameDeleteButton)
+                    .addComponent(frameUpButton))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(framePanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(frameUpButton)
-                    .addComponent(frameDownButton)))
+                    .addComponent(frameDeleteButton)
+                    .addComponent(frameDownButton))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(frameDuplicateButton))
         );
 
         framePanelLayout.linkSize(javax.swing.SwingConstants.VERTICAL, new java.awt.Component[] {frameDeleteButton, frameDownButton, frameDuplicateButton, frameNewButton, frameUpButton});
@@ -194,18 +191,24 @@ public class MainUI extends javax.swing.JFrame {
                     .addComponent(actionScrollPane)
                     .addGroup(actionPanelLayout.createSequentialGroup()
                         .addGroup(actionPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(actionNewButton)
+                            .addComponent(actionRenameButton)
+                            .addComponent(actionNewButton))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addGroup(actionPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(actionPanelLayout.createSequentialGroup()
-                                .addGroup(actionPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                    .addComponent(actionUpButton)
-                                    .addComponent(actionRenameButton))
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addGroup(actionPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(actionDuplicateButton)
-                                    .addComponent(actionDownButton))))
-                        .addGap(0, 32, Short.MAX_VALUE)))
+                                .addComponent(actionUpButton)
+                                .addGap(24, 52, Short.MAX_VALUE))
+                            .addGroup(actionPanelLayout.createSequentialGroup()
+                                .addComponent(actionDownButton)
+                                .addGap(0, 0, Short.MAX_VALUE))))
+                    .addGroup(actionPanelLayout.createSequentialGroup()
+                        .addComponent(actionDuplicateButton)
+                        .addGap(0, 0, Short.MAX_VALUE)))
                 .addContainerGap())
         );
+
+        actionPanelLayout.linkSize(javax.swing.SwingConstants.HORIZONTAL, new java.awt.Component[] {actionDownButton, actionNewButton, actionRenameButton, actionUpButton});
+
         actionPanelLayout.setVerticalGroup(
             actionPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(actionPanelLayout.createSequentialGroup()
@@ -213,15 +216,15 @@ public class MainUI extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(actionScrollPane, javax.swing.GroupLayout.DEFAULT_SIZE, 359, Short.MAX_VALUE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(actionNewButton)
+                .addGroup(actionPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(actionUpButton)
+                    .addComponent(actionNewButton, javax.swing.GroupLayout.Alignment.TRAILING))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(actionPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(actionDuplicateButton)
+                .addGroup(actionPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(actionDownButton)
                     .addComponent(actionRenameButton))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(actionPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(actionUpButton)
-                    .addComponent(actionDownButton)))
+                .addComponent(actionDuplicateButton))
         );
 
         actionPanelLayout.linkSize(javax.swing.SwingConstants.VERTICAL, new java.awt.Component[] {actionDownButton, actionDuplicateButton, actionNewButton, actionRenameButton, actionUpButton});
@@ -275,7 +278,7 @@ public class MainUI extends javax.swing.JFrame {
                         .addComponent(moduleEditButton)
                         .addGap(18, 18, 18)
                         .addComponent(moduleMoveButton)))
-                .addContainerGap(12, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         imagePanelLayout.setVerticalGroup(
             imagePanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
