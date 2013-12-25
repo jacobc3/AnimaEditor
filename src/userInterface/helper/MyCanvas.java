@@ -3,13 +3,18 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
+package userInterface.helper;
 
-package helperClasses;
+import java.awt.Canvas;
 
 /**
+ * 没用
  *
  * @author zhoushuwen
  */
-public interface ActionInterface {
-    String getActionName();
+public class MyCanvas extends Canvas {
+
+    protected void draw() {
+        System.out.println("~~~~~~~~~~~~~~~");
+    }
 }

@@ -23,7 +23,7 @@ public class FrameEditorUI extends javax.swing.JFrame {
      * Creates new form FrameEditorInterface
      */
     public FrameEditorUI() {
-	detailImage = (new ImageIcon("颜色选择UI.png")).getImage(); //TODO 默认加载了烟花.png，需要根据选择更改
+	detailImage = (new ImageIcon("烟花.png")).getImage(); //TODO 默认加载了烟花.png，需要根据选择更改
         initComponents();
     }
 

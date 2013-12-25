@@ -3,9 +3,8 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/Users/zhoushuwen/Desktop/AnimaEditor/src/animaeditor/MainUI.java</file>
-            <file>file:/C:/Users/zhoushuwen/Desktop/AnimaEditor/src/nothing/ImagePanel.java</file>
-            <file>file:/C:/Users/zhoushuwen/Desktop/AnimaEditor/src/nothing/Nothing.java</file>
+            <file>file:/C:/Users/zhoushuwen/Desktop/AnimaEditor/src/interfaceClasses/ActionInterface.java</file>
+            <file>file:/C:/Users/zhoushuwen/Desktop/AnimaEditor/src/interfaceClasses/SampleAction.java</file>
         </group>
     </open-files>
 </project-private>
